@@ -1,0 +1,52 @@
+*{
+    border: 1px solid black;
+    padding: 2px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+width: 60%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.information-images{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

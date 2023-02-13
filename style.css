@@ -9,11 +9,14 @@ html{
 
 .navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 5px;
 }
 
 .logo{
-width: 60%;
+flex-basis: 80%;
+flex-grow: 0;
+flex-shrink: 4;
 }
 
 .main{
@@ -31,6 +34,7 @@ h3{
     gap: 10px;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .quote{

@@ -7,6 +7,12 @@ html{
     box-sizing: border-box;
 }
 
+
+.header{
+
+    background: #1f2937;
+}
+
 .navigation{
     display: flex;
     justify-content: space-evenly;
@@ -23,6 +29,31 @@ flex-shrink: 4;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.main >.main-text > p{
+    color: white;
+}
+
+.main >.main-text > button{
+    background-color: #3882f6;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 10%;
+    font-weight: 700;
+}
+
+
+.header > .main > .main-image{
+    height: 120px;
+    padding: 10px;
+    margin: 0 20px;
+    width: 600px;
+    background-image: url("https://source.unsplash.com/random/400x200");
 }
 
 h3{

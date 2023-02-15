@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* HEADER SECTION START */
@@ -46,6 +47,7 @@ a {
   min-height: 45vh;
   padding: 0 30px;
   max-width: 40%;
+  min-width: 40%;
 }
 
 h1 {
@@ -55,7 +57,6 @@ h1 {
 
 .main > .main-text > p {
   color: #e5e7eb;
-  max-width: 300px;
   font-size: 18px;
 }
 
@@ -136,18 +137,27 @@ h3 {
 
 .quote {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
   padding: 80px 15%;
-  font-size: 36px;
+  font-size: 32px;
   font-style: italic;
   font-weight: lighter;
 }
 
+.quote-author{
+  margin-top: 20px;
+  align-self: flex-end;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+}
+
 .sign-up {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #3882f6;
   padding: 20px;
@@ -163,8 +173,13 @@ h3 {
   font-weight: 300;
 }
 
-.sign-up-button {
-  margin-left: 15px;
+.sign-up form{
+  min-width: 90px;
+  max-width: 130px;
+}
+
+.sign-up .sign-up-button {
+  margin: 15px 15px 15px -5px;
   border: 2px solid #f9faf8;
   background-color: #3882f6;
   padding: 5px 13px;
@@ -172,7 +187,8 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   color: #f9faf8;
-  min-width: 40px;
+  width: 100%;
+  
 }
 
 /* QUOTE SECTION END */
@@ -191,4 +207,41 @@ h3 {
 
 button {
   cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 910px) {
+  html {
+    font-size: 62.5%;
+  }
+  .main{
+    text-align: center;
+  }
+  .main p {
+    margin: 0;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .navigation {
+    gap: 5px;
+    
+  
+  }
+  .sign-up .sign-up-button{
+    font-size: 70%;
+  }
+  .logo{
+    flex-basis: 70%;
+  }
+}
+
+
+
+/* Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+ 
 }
